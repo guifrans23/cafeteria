@@ -1,0 +1,34 @@
+/*
+arquivo de css (cascade style sheet -folha de estilo em cascata)
+são utilizados para formatar paginas html. enquanto as 
+paginas criam a estrutura de um site ,o css, por sua vez,realiza 
+a formação do conteúdo html.
+*/ 
+
+h1{
+
+    font-family: Arial ; /*tipo de letra*/
+    font-size: 15pt; /*o tamanho  da letra. pt->ponto|mesmo do word */
+    color: purple; /*cor da letra*/
+    text-align: center; /*alinhar  o0 texto no texto*/
+}
+
+img{
+    width: 300px; /*largura da imagem */
+    height: 350; //*altura da imagem*/
+    opacity: 0.5; /*efeito de transparência em 50%*/
+    transition: ease 1s; /*efeito de animação*/
+}
+
+img:hover{
+    transform: rotate(360deg); /*rotacionar em 360 graus*/
+    opacity: 1;
+    border-radius: 100px; /*arrendondar os cantos da imagem */
+}
+
+
+p{
+    font-family: Arial ;
+    font-size: 10pt;
+    text-align: justify;
+}
