@@ -1,0 +1,91 @@
+/*
+    Arquivo css para a formatação do site da cafeteria
+*/
+
+/*aplicar a formatação de todos os elementos. usaremos o
+asterisco *
+*/
+
+* {
+  /*zerar a margem externa do elemento*/
+  margin: 0;
+  /*zerar a margem interna dos elementos*/
+  padding: 0;
+  /*ajuste das caixas(box) dos elementos*/
+  box-sizing: border-box;
+}
+header {
+  height: 300px; /*altura da caixa*/
+  /*adicionar uma imagem ao fundo*/
+  background-image: url("../img/cafe5.jpg");
+  /*ajustar a largura da imagem em 100%*/
+  background-size: 100%;
+  /*ajustar a posição em X e Y da imagem de fundo*/
+  background-position: 0 -275px;
+  /*animação no fundo*/
+  transition: ease 1s;
+  padding-top: 100px;
+}
+
+h1 {
+  text-align: center;
+  font-family: Verdana;
+  color: rgb(80, 56, 33);
+  /*aplicar uma sombra no texto */
+  text-shadow: 10px 10px 5px black;
+}
+
+nav {
+  background-color: rgb(167, 109, 82);
+  text-align: center;
+}
+
+nav ul li {
+  /* dispor os itens da lista(li) em linha */
+  display: inline-block;
+  /* aumentar a distancia entre os elementos  */
+  padding: 15px;
+  transition: ease 0.5s;
+}
+/* ao passar o  mouse sobre o link o fundo do link deve 
+alterar sua cor */
+
+nav ul li:hover {
+  background-color: rgb(37, 25, 10);
+}
+
+nav ul li a {
+  font-family: "verdana";
+  font-size: 10pt;
+  color: rgb(63, 36, 20);
+  /* retirar o underline do link */
+  text-decoration: none; /*nenhuma*/
+}
+
+footer {
+  height: 300px; /*altura em 300px*/
+  background-color: rgb(117, 88, 63);
+  font-family: "arial";
+  padding-top: 45px;
+  /* dispor de forma flexível e em linha  */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+footer div {
+  /* border: 1px solid yellow;  (para dar margem para o item)*/
+  width: 20%;
+  margin: 30px;
+}
+
+#redes ul li {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+#redes ul li a img {
+  width: 40px;
+  height: 40px;
+}
