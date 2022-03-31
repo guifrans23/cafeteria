@@ -89,3 +89,42 @@ footer div {
   width: 40px;
   height: 40px;
 }
+
+/* -------------------------------------------inicio da home----------------------------------------------------------- */
+h2 {
+  font-family: "arial";
+  font-size: 20pt;
+  margin: 50px;
+  /* borda na parte inferior(bottom) do h2 */
+  border-bottom: 1px solid rgb(70, 38, 19);
+}
+
+#home p {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: sans-serif;
+  font-size: 12pt;
+  line-height: 25pt;
+  /* espaçamento entre linhas */
+  text-align: justify;
+}
+
+#imghome {
+  text-align: center;
+}
+
+#imghome img {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  opacity: 0.7;
+  transition: ease 0.5s;
+  /* mudar o ponteiro do mouse para uma mão */
+  cursor: pointer;
+  margin: 10px;
+}
+#imghome img:hover {
+  transform: scale(1.2);
+  opacity: 1;
+}
