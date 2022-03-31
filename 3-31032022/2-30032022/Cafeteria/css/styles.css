@@ -128,3 +128,31 @@ h2 {
   transform: scale(1.2);
   opacity: 1;
 }
+/*Fim do estilo da home*/
+/*Inicio do estilo da historia----------------------------------------------*/
+
+#historia p {
+  width: 70%;
+  font-family: "arial";
+  font-size: 12pt;
+  line-height: 30pt;
+  text-align: justify;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#imghistoria {
+  text-align: center;
+}
+
+#imghistoria img {
+  width: 150px;
+  height: 150px;
+  margin: 10px;
+}
+
+iframe {
+  width: 100%;
+  height: 500px;
+  margin: 20px;
+}
