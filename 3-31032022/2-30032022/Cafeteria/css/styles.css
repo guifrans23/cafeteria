@@ -199,3 +199,48 @@ h3 {
   margin: 10px;
   font-weight: 10px;
 }
+/* ------------------------------------------------fim do cardápio---------------------------------------------------------------- */
+/* ---------------------------------------formatação css para a pagina contatos--------------------------------------------------- */
+main form {
+  width: 40%;
+  padding: 10px;
+  background-color: rgb(139, 107, 69);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main form input[type="text"],
+main form input[type="email"],
+main form input[type="tel"],
+main form select,
+main form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 0px;
+  border-bottom: 1px solid silver;
+  border-radius: 5px;
+  display: block;
+}
+
+main form input[type="tel"] {
+  width: 30%;
+}
+main form select {
+  width: 30%;
+}
+main form textarea {
+  height: 250px;
+  border: 1px solid silver;
+  margin-bottom: 10px;
+}
+
+main form input[type="submit"] {
+  padding: 10px;
+  border: 0px;
+  background-color: rgb(rgb(202, 199, 199));
+  font-weight: bold;
+  cursor: pointer;
+  color: black;
+  margin-left: 45%;
+}
