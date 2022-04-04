@@ -1,0 +1,324 @@
+/*
+    Arquivo css para a formatação do site da cafeteria
+*/
+
+/*aplicar a formatação de todos os elementos. usaremos o
+asterisco *
+*/
+
+* {
+  /*zerar a margem externa do elemento*/
+  margin: 0;
+  /*zerar a margem interna dos elementos*/
+  padding: 0;
+  /*ajuste das caixas(box) dos elementos*/
+  box-sizing: border-box;
+}
+header {
+  height: 300px; /*altura da caixa*/
+  /*adicionar uma imagem ao fundo*/
+  background-image: url("../img/cafe5.jpg");
+  /*ajustar a largura da imagem em 100%*/
+  background-size: 100%;
+  /*ajustar a posição em X e Y da imagem de fundo*/
+  background-position: 0 -275px;
+  /*animação no fundo*/
+  transition: ease 1s;
+  padding-top: 100px;
+}
+
+h1 {
+  text-align: center;
+  font-family: Verdana;
+  color: rgb(80, 56, 33);
+  /*aplicar uma sombra no texto */
+  text-shadow: 10px 10px 5px black;
+}
+
+nav {
+  background-color: rgb(167, 109, 82);
+  text-align: center;
+}
+
+nav ul li {
+  /* dispor os itens da lista(li) em linha */
+  display: inline-block;
+  /* aumentar a distancia entre os elementos  */
+  padding: 15px;
+  transition: ease 0.5s;
+}
+/* ao passar o  mouse sobre o link o fundo do link deve 
+alterar sua cor */
+
+nav ul li:hover {
+  background-color: rgb(37, 25, 10);
+}
+
+nav ul li a {
+  font-family: "verdana";
+  font-size: 10pt;
+  color: rgb(63, 36, 20);
+  /* retirar o underline do link */
+  text-decoration: none; /*nenhuma*/
+}
+
+footer {
+  height: 300px; /*altura em 300px*/
+  background-color: rgb(117, 88, 63);
+  font-family: "arial";
+  padding-top: 45px;
+  /* dispor de forma flexível e em linha  */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+footer div {
+  /* border: 1px solid yellow;  (para dar margem para o item)*/
+  width: 20%;
+  margin: 30px;
+}
+
+#redes ul li {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+#redes ul li a img {
+  width: 40px;
+  height: 40px;
+}
+
+/* -------------------------------------------inicio da home----------------------------------------------------------- */
+h2 {
+  font-family: "arial";
+  font-size: 20pt;
+  margin: 50px;
+  /* borda na parte inferior(bottom) do h2 */
+  border-bottom: 1px solid rgb(70, 38, 19);
+}
+
+#home p {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: sans-serif;
+  font-size: 12pt;
+  line-height: 25pt;
+  /* espaçamento entre linhas */
+  text-align: justify;
+}
+
+#imghome {
+  text-align: center;
+}
+
+#imghome img {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  opacity: 0.7;
+  transition: ease 0.5s;
+  /* mudar o ponteiro do mouse para uma mão */
+  cursor: pointer;
+  margin: 10px;
+}
+#imghome img:hover {
+  transform: scale(1.2);
+  opacity: 1;
+}
+/*-------------------------------------------Fim do estilo da home------------------------------------------------------*/
+/*-------------------------------------------Inicio do estilo da historia----------------------------------------------*/
+
+#historia p {
+  width: 70%;
+  font-family: "arial";
+  font-size: 12pt;
+  line-height: 30pt;
+  text-align: justify;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#imghistoria {
+  text-align: center;
+}
+
+#imghistoria img {
+  width: 150px;
+  height: 150px;
+  margin: 10px;
+}
+
+iframe {
+  width: 100%;
+  height: 500px;
+  margin: 20px;
+}
+
+/* ------------------------------------------------fim do historia---------------------------------------------------- */
+/* ----------------------------------------------inicio do cardápio----------------------------------------------------- */
+
+h3 {
+  font-family: "arial";
+  font-size: 30pt;
+  margin: 30px;
+}
+
+#linha {
+  padding: 30px;
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; /*quebra de linha*/
+  box-shadow: 2px 2px 10px black;
+  justify-content: center;
+}
+
+#linha div {
+  width: 30%;
+  margin: 10px;
+  border: 1px solid silver;
+}
+
+#linha div img {
+  width: 100%;
+}
+
+#linha div h4 {
+  font-family: arial;
+  font-size: 20px;
+  margin: 10px;
+}
+
+#linha div p {
+  font-family: arial;
+  font-size: 15pt;
+  color: rgb(0, 0, 0);
+  margin: 10px;
+  font-weight: 10px;
+}
+/* ------------------------------------------------fim do cardápio---------------------------------------------------------------- */
+/* ---------------------------------------formatação css para a pagina contatos--------------------------------------------------- */
+main form {
+  width: 40%;
+  padding: 10px;
+  background-color: rgb(139, 107, 69);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main form input[type="text"],
+main form input[type="email"],
+main form input[type="tel"],
+main form select,
+main form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 0px;
+  border-bottom: 1px solid silver;
+  border-radius: 5px;
+  display: block;
+}
+
+main form input[type="tel"] {
+  width: 30%;
+}
+main form select {
+  width: 30%;
+}
+main form textarea {
+  height: 250px;
+  border: 1px solid silver;
+  margin-bottom: 10px;
+}
+
+main form input[type="submit"] {
+  padding: 10px;
+  border: 0px;
+  background-color: rgb(rgb(202, 199, 199));
+  font-weight: bold;
+  cursor: pointer;
+  color: black;
+  margin-left: 45%;
+}
+/* ----------------------------------------------------fim do contatos----------------------------------------------------- */
+/*-------------------------------------------------=inicio do localização--------------------------------------------------*/
+
+#mapa iframe {
+  width: 100%;
+  height: 500px;
+}
+
+/*---------------------------------------------------fim do localização---------------------------------------------------------*/
+/* --------------------------------------------------AREA DOS BREAKPOINTS--------------------------------------------------- ------*-/
+
+
+/* // Small devices (landscape phones, 576px and up) */
+
+@media (min-width: 0px) and (max-width: 575px) {
+  header {
+    background-size: cover;
+    background-position: 0px 0px;
+  }
+  nav {
+    width: 150px;
+    height: 100vh; /*altura d da tela do dispositivo*/
+    position: absolute; /*definindo uma posição "fixa" na tela*/
+    z-index: 10000; /*empilhamento.fazendo ficar acima de 9999 itens*/
+    top: 0px; /*posição inicial de topo 0*/
+    left: -150px; /*posição inicial e esquerda 0*/
+    padding-top: 100px;
+    text-align: left;
+  }
+  nav ul li {
+    display: block;
+  }
+
+  #imghome img {
+    border-radius: 0px;
+    opacity: 1;
+    transition: ease 0.5s;
+  }
+  footer {
+    flex-direction: column;
+  }
+
+  footer div {
+    width: 80%;
+    margin: auto;
+  }
+
+  BODY {
+    background-color: rgba(69, 83, 7, 0.349);
+  }
+}
+
+@media (min-width: 576px) {
+  BODY {
+    background-color: rgb(245, 16, 16);
+  }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  BODY {
+    background-color: rgb(131, 81, 81);
+  }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  BODY {
+    background-color: rgb(0, 18, 177);
+  }
+}
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  BODY {
+    background-color: rgb(248, 15, 143);
+  }
+}

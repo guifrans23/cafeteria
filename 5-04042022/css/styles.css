@@ -1,0 +1,54 @@
+/* 
+criação de uma paleta de cores personalizadas 
+*/
+
+/* cores para o fundo-prefixo bg"background" */
+.bgpreto {
+  background-color: rgb(0, 0, 0);
+}
+
+.bglaranja {
+  background-color: rgb(202, 100, 4);
+}
+
+.bgvermelho {
+  background-color: rgb(255, 0, 0);
+}
+
+/* cores para as letras - prefixo tx "cor da letra */
+
+.txbranco {
+  color: rgb(255, 255, 255);
+}
+
+.txamarelo {
+  color: rgb(255, 255, 4);
+}
+
+/* tamanho da letra */
+
+.t1 {
+  font-size: 50pt;
+}
+
+.t2 {
+  font-size: 40pt;
+}
+
+.t3 {
+  font-size: 25pt;
+}
+
+.t4 {
+  font-size: 18pt;
+}
+
+.p1 {
+  font-family: arial;
+  font-size: 15pt;
+}
+
+.p2 {
+  font-family: arial;
+  font-size: 12pt;
+}
