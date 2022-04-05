@@ -27,6 +27,12 @@ header {
   padding-top: 100px;
 }
 
+header a,
+#fechar {
+  opacity: 0;
+  transition: ease 0.5s;
+}
+
 h1 {
   text-align: center;
   font-family: Verdana;
@@ -38,6 +44,7 @@ h1 {
 nav {
   background-color: rgb(167, 109, 82);
   text-align: center;
+  transition: ease 0.5s;
 }
 
 nav ul li {
@@ -291,8 +298,46 @@ main form input[type="submit"] {
     margin: auto;
   }
 
-  BODY {
-    background-color: rgba(69, 83, 7, 0.349);
+  header a {
+    opacity: 1;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    /* background-color: rgba(255, 255, 255, 0.8); */
+    color: white;
+    padding: 2px;
+    text-decoration: none;
+    font-size: 15pt;
+  }
+
+  #fechar {
+    opacity: 1;
+    color: #fff;
+    font-size: 25pt;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    text-decoration: none;
+    transform: rotate(180deg);
+  }
+
+  iframe {
+    width: 90%;
+  }
+
+  #linha {
+    flex-direction: column;
+  }
+
+  #linha div {
+    width: 95%;
+  }
+  main form {
+    width: 90%;
+  }
+
+  #mapa iframe {
+    width: 95%;
   }
 }
 
